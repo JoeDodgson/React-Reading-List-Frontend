@@ -9,7 +9,6 @@ export const Saved = () => {
     <>
         <NavBar />
         <Header  title="Saved Books"/>
-        <SearchBar />
         <BooksContainer />
     </>
   );
