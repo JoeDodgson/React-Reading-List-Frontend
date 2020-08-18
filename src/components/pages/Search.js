@@ -7,7 +7,7 @@ import { BooksContainer } from '../BooksContainer'
 export const Search = () => {
   return (
     <>
-        <NavBar />
+        <NavBar active="search"/>
         <Header title="Results"/>
         <SearchBar />
         <BooksContainer />

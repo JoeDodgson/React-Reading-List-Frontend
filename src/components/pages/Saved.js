@@ -7,7 +7,7 @@ import { BooksContainer } from '../BooksContainer'
 export const Saved = () => {
   return (
     <>
-        <NavBar />
+        <NavBar active="saved"/>
         <Header  title="Saved Books"/>
         <BooksContainer />
     </>
