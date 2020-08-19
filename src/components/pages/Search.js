@@ -1,16 +1,16 @@
 import React from 'react';
 import { NavBar } from '../NavBar'
 import { Header } from '../Header'
-import { SearchBar } from '../SearchBar'
+import SearchBar from '../SearchBar'
 import { BooksContainer } from '../BooksContainer'
 
 export const Search = () => {
   return (
     <>
-        <NavBar />
+        <NavBar active="search"/>
         <Header title="Results"/>
         <SearchBar />
-        <BooksContainer />
+        <BooksContainer heading="Search Results"/>
     </>
   );
 }

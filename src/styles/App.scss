@@ -1,0 +1,137 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Colours
+$lightGrey: #f8f9fa;
+$medGrey: #666;
+$darkGrey: #333333;
+$darkBlue: #3f51b5;
+$white: #FFF;
+$blue: #008CBA;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Arial, Hlevetica, sans-serif;
+    line-height: 1.4;
+}
+  
+a {
+    color: $darkGrey;
+    text-decoration: none;
+}
+  
+button {
+    transition-duration: 0.1s;
+    background: $darkBlue;
+    border-radius: 5px;
+    background-color: $darkBlue;
+    color: $darkGrey;
+}
+
+button:hover {
+    background-color: $darkBlue;
+    color: $white;
+}
+
+.navbar {
+    background: $medGrey;
+    width: 100%;
+    border-bottom: 1px solid $darkGrey;
+    padding: 15px;
+}
+  
+.navbar-title {
+    color: $white;
+}
+  
+.navbar-brand i {
+    margin-left: 20px;
+}
+
+.active a {
+    font-weight: bold;
+}
+
+.header-container, .App {
+    text-align: center;
+}
+
+.header-container {
+    background: $darkBlue;
+    width: 95%;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid $darkGrey;
+    border-radius: 10px;
+    color: $white;
+}
+
+.books-container h3 {
+    font-weight: bold;
+    padding: 5px 15px;
+    color: $darkBlue;
+}
+
+.header-tagline {
+    font-style: italic;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.searchbar-container, .books-container {
+    border: 1px solid $darkGrey;
+    border-radius: 5px;
+    width: 95%;
+    margin: 15px auto;
+    background: $lightGrey;
+}
+
+.books-container {
+    padding: 10px;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+} 
+  
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+}
+  
+.App-header {
+    background-color: $darkGrey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $white;
+}
+  
+.App-link {
+    color: $darkBlue;
+}
+  
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

@@ -7,10 +7,9 @@ import { BooksContainer } from '../BooksContainer'
 export const Saved = () => {
   return (
     <>
-        <NavBar />
-        <Header  title="Saved Books"/>
-        <SearchBar />
-        <BooksContainer />
+        <NavBar active="saved"/>
+        <Header title="Saved Books"/>
+        <BooksContainer heading="Saved Books"/>
     </>
   );
 }
