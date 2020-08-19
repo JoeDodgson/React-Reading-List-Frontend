@@ -10819,6 +10819,8 @@ a {
 .navbar {
   background: #444;
   width: 100%;
+  border-bottom: 1px solid #333333;
+  padding: 15px;
 }
 
 .navbar-title {
@@ -10833,8 +10835,21 @@ a {
   font-weight: bold;
 }
 
-.App {
+.header-container, .App {
   text-align: center;
+}
+
+.header-container {
+  background: #b4efff;
+  width: 85%;
+  margin: 15px auto;
+  padding: 10px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+.header-tagline {
+  font-style: italic;
 }
 
 .App-logo {
@@ -10850,7 +10865,7 @@ a {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #333333;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10866,11 +10881,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #b4efff;
 }
 
 @-webkit-keyframes App-logo-spin {

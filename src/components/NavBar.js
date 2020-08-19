@@ -3,7 +3,7 @@ import React from 'react';
 export const NavBar = props => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand">Google Books React Search<i className="fas fa-book"></i></a>
+            <a className="navbar-brand">Google Books<i className="fas fa-book"></i></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

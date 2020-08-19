@@ -1,5 +1,11 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// Colours
+$darkGrey: #333333;
+$medGrey: #444;
+$aquaBlue: #b4efff;
+$white: #FFF;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,17 +18,19 @@ body {
 }
   
 a {
-    color: #333333;
+    color: $darkGrey;
     text-decoration: none;
 }
   
 .navbar {
-    background: #444;
+    background: $medGrey;
     width: 100%;
+    border-bottom: 1px solid $darkGrey;
+    padding: 15px;
 }
   
 .navbar-title {
-    color: #FFF;
+    color: $white;
 }
   
 .navbar-brand i {
@@ -33,8 +41,21 @@ a {
     font-weight: bold;
 }
 
-.App {
+.header-container, .App {
     text-align: center;
+}
+
+.header-container {
+    background: $aquaBlue;
+    width: 85%;
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid $darkGrey;
+    border-radius: 10px;
+}
+
+.header-tagline {
+    font-style: italic;
 }
   
 .App-logo {
@@ -49,18 +70,18 @@ a {
 }
   
 .App-header {
-    background-color: #282c34;
+    background-color: $darkGrey;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: $white;
 }
   
 .App-link {
-    color: #61dafb;
+    color: $aquaBlue;
 }
   
 @keyframes App-logo-spin {
