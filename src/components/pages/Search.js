@@ -10,7 +10,7 @@ export const Search = () => {
         <NavBar active="search"/>
         <Header title="Results"/>
         <SearchBar />
-        <BooksContainer />
+        <BooksContainer heading="Search Results"/>
     </>
   );
 }

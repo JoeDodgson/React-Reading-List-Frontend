@@ -8,8 +8,8 @@ export const Saved = () => {
   return (
     <>
         <NavBar active="saved"/>
-        <Header  title="Saved Books"/>
-        <BooksContainer />
+        <Header title="Saved Books"/>
+        <BooksContainer heading="Saved Books"/>
     </>
   );
 }

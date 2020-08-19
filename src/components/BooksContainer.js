@@ -1,7 +1,7 @@
 import React from 'react'
 import { Book } from './Book';
 
-export const BooksContainer = () => {
+export const BooksContainer = props => {
     const books = [
         {
             authors: ["Suzanne Collins"],
@@ -28,6 +28,7 @@ export const BooksContainer = () => {
 
     return (
         <div className="row books-container">
+            <h3>{props.heading}</h3>
             {books.map(book => (
                 <Book id={book.id} authors={book.authors} description={book.description} image={book.image} link={book.link} title={book.title}/>
             ))}
