@@ -4,7 +4,7 @@
 $lightGrey: #f8f9fa;
 $medGrey: #666;
 $darkGrey: #333333;
-$aquaBlue: #b4efff;
+$darkBlue: #3f51b5;
 $white: #FFF;
 $blue: #008CBA;
 
@@ -26,16 +26,14 @@ a {
   
 button {
     transition-duration: 0.1s;
-    background: $aquaBlue;
+    background: $darkBlue;
     border-radius: 5px;
-    border: 2px solid $medGrey;
-    background-color: $aquaBlue;
+    background-color: $darkBlue;
     color: $darkGrey;
 }
 
 button:hover {
-    border: 2px solid $darkGrey;
-    background-color: $blue;
+    background-color: $darkBlue;
     color: $white;
 }
 
@@ -63,12 +61,13 @@ button:hover {
 }
 
 .header-container {
-    background: $aquaBlue;
+    background: $darkBlue;
     width: 95%;
     margin: 15px auto;
     padding: 10px;
-    border: 2px solid $darkGrey;
+    border: 1px solid $darkGrey;
     border-radius: 10px;
+    color: $white;
 }
 
 .header-tagline {
@@ -80,12 +79,16 @@ button:hover {
     pointer-events: none;
 }
 
-.searchbar-container {
+.searchbar-container, .books-container {
     border: 1px solid $darkGrey;
     border-radius: 5px;
     width: 95%;
     margin: 15px auto;
     background: $lightGrey;
+}
+
+.books-container {
+    padding: 10px;
 }
 
 .form {
@@ -115,7 +118,7 @@ button:hover {
 }
   
 .App-link {
-    color: $aquaBlue;
+    color: $darkBlue;
 }
   
 @keyframes App-logo-spin {

@@ -10819,16 +10819,14 @@ a {
 button {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
-  background: #b4efff;
+  background: #3f51b5;
   border-radius: 5px;
-  border: 2px solid #666;
-  background-color: #b4efff;
+  background-color: #3f51b5;
   color: #333333;
 }
 
 button:hover {
-  border: 2px solid #333333;
-  background-color: #008CBA;
+  background-color: #3f51b5;
   color: #FFF;
 }
 
@@ -10856,12 +10854,13 @@ button:hover {
 }
 
 .header-container {
-  background: #b4efff;
+  background: #3f51b5;
   width: 95%;
   margin: 15px auto;
   padding: 10px;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
   border-radius: 10px;
+  color: #FFF;
 }
 
 .header-tagline {
@@ -10873,12 +10872,16 @@ button:hover {
   pointer-events: none;
 }
 
-.searchbar-container {
+.searchbar-container, .books-container {
   border: 1px solid #333333;
   border-radius: 5px;
   width: 95%;
   margin: 15px auto;
   background: #f8f9fa;
+}
+
+.books-container {
+  padding: 10px;
 }
 
 .form {
@@ -10918,7 +10921,7 @@ button:hover {
 }
 
 .App-link {
-  color: #b4efff;
+  color: #3f51b5;
 }
 
 @-webkit-keyframes App-logo-spin {
