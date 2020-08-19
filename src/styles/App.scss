@@ -1,10 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Colours
+$lightGrey: #f8f9fa;
+$medGrey: #666;
 $darkGrey: #333333;
-$medGrey: #444;
 $aquaBlue: #b4efff;
 $white: #FFF;
+$blue: #008CBA;
 
 * {
     box-sizing: border-box;
@@ -22,6 +24,21 @@ a {
     text-decoration: none;
 }
   
+button {
+    transition-duration: 0.1s;
+    background: $aquaBlue;
+    border-radius: 5px;
+    border: 2px solid $medGrey;
+    background-color: $aquaBlue;
+    color: $darkGrey;
+}
+
+button:hover {
+    border: 2px solid $darkGrey;
+    background-color: $blue;
+    color: $white;
+}
+
 .navbar {
     background: $medGrey;
     width: 100%;
@@ -47,7 +64,7 @@ a {
 
 .header-container {
     background: $aquaBlue;
-    width: 85%;
+    width: 95%;
     margin: 15px auto;
     padding: 10px;
     border: 2px solid $darkGrey;
@@ -57,11 +74,28 @@ a {
 .header-tagline {
     font-style: italic;
 }
-  
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
 }
+
+.searchbar-container {
+    border: 1px solid $darkGrey;
+    border-radius: 5px;
+    width: 95%;
+    margin: 15px auto;
+    background: $lightGrey;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+} 
   
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {

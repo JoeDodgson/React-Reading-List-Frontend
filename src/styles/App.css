@@ -10816,8 +10816,24 @@ a {
   text-decoration: none;
 }
 
+button {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  background: #b4efff;
+  border-radius: 5px;
+  border: 2px solid #666;
+  background-color: #b4efff;
+  color: #333333;
+}
+
+button:hover {
+  border: 2px solid #333333;
+  background-color: #008CBA;
+  color: #FFF;
+}
+
 .navbar {
-  background: #444;
+  background: #666;
   width: 100%;
   border-bottom: 1px solid #333333;
   padding: 15px;
@@ -10841,7 +10857,7 @@ a {
 
 .header-container {
   background: #b4efff;
-  width: 85%;
+  width: 95%;
   margin: 15px auto;
   padding: 10px;
   border: 2px solid #333333;
@@ -10855,6 +10871,23 @@ a {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.searchbar-container {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  width: 95%;
+  margin: 15px auto;
+  background: #f8f9fa;
+}
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
