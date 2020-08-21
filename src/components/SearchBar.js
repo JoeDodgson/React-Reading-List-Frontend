@@ -26,12 +26,10 @@ class SearchBar extends Component {
       }
   
       this.setState({
-        search: ""
       });
     };
   
     render() {
-      // Notice how each input has a `value`, `name`, and `onChange` prop
         return (
             <div className="row searchbar-container">
                 <div className="col-10" style={{margin: "0 auto"}}>
@@ -39,15 +37,15 @@ class SearchBar extends Component {
                         <div className="row">
                             <div className="col-1"></div>
                             <input
-                            className="col-7"
-                            value={this.state.search}
-                            name="search"
-                            onChange={this.handleInputChange}
-                            type="text"
-                            placeholder="Search for a book"
+                                className="col-7"
+                                value={this.props.search}
+                                name="search"
+                                onChange={this.props.handleInputChange}
+                                type="text"
+                                placeholder="Search for a book"
                             />
                             <div className="col-1"></div>
-                            <Button id="search-button" className="col-2" onClick={this.handleFormSubmit} variant="contained" color="primary">
+                            <Button id="search-button" className="col-2" onClick={this.props.handleFormSubmit} variant="contained" color="primary">
                                 Submit
                             </Button>
                             <div className="col-1"></div>
