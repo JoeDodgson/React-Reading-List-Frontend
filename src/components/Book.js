@@ -43,7 +43,7 @@ export const Book = props => {
   const theme = useTheme();
 
   return (
-    <Card key={props.id} className={classes.root}>
+    <Card className={classes.root}>
         <CardMedia
             className={classes.cover}
             image={props.image}
@@ -61,8 +61,8 @@ export const Book = props => {
                         </Typography>
                     </div>
                     <div className="col-3">
-                        <ButtonGroup disableElevation variant="contained" color="primary">
-                            <Button>View</Button>
+                        <ButtonGroup disableElevation variant="contained" color="primary" infoLink={props.infoLink}>
+                            <Button href={props.infoLink} target="_blank">View</Button>
                             <Button>Add</Button>
                         </ButtonGroup>
                     </div>

@@ -25,12 +25,17 @@ export const BooksContainer = props => {
     //         title: "The Hunger Flames",
     //     },
     // ];
-
     return (
         <div className="row books-container">
             <h3>{props.heading}</h3>
             {props.books.map(book => (
-                <Book id={book.id} authors={book.authors} description={book.description} image={book.image} link={book.link} title={book.title}/>
+                <Book 
+                    key={book.id} 
+                    authors={book.authors} 
+                    description={book.description} 
+                    image={book.image} 
+                    infoLink={book.infoLink} 
+                    title={book.title}/>
             ))}
         </div>
     )

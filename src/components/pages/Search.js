@@ -8,7 +8,7 @@ import API from '../../utils/googleBooksAPI'
 class Search extends Component {
   state = {
     search: "",
-    results: [],
+    books: [],
     error: ""
   };
 
@@ -21,8 +21,29 @@ class Search extends Component {
     event.preventDefault();
     try {
       const results = await API.getBookBySearch(this.state.search);
-      this.setState({ ...this.state, results });
-      console.log(results);
+      let books = [];
+      results.data.items.forEach(result => {
+        const { id } = result;
+        const { description, imageLinks, infoLink, title } = result.volumeInfo;
+        let authors;
+        if (result.volumeInfo.authors) {
+          authors = result.volumeInfo.authors.join(", ");
+        }
+        else {
+          authors = "Information not available"
+        }
+        const image = imageLinks.smallThumbnail || imageLinks.thumbnail || imageLinks.largeThumbnail;
+        const book = {
+          id,
+          authors,
+          description,
+          image,
+          infoLink,
+          title
+        }
+        books.push(book);
+      })
+      this.setState({ ...this.state, books });
     }
     catch (err) {
       console.log(`ERROR: Search.js - handleFormSubmit() - ${err}`);
@@ -41,7 +62,7 @@ class Search extends Component {
           <BooksContainer 
             heading="Search Results"
             search={this.state.search}
-            books={this.state.results}
+            books={this.state.books}
           />
       </>
     );
