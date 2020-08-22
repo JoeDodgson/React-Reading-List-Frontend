@@ -42,6 +42,23 @@ export const Book = props => {
   const classes = useStyles();
   const theme = useTheme();
 
+  const handleClickAdd = event => {
+    event.preventDefault();
+    props.addBook({
+        id: props.id,
+        title: props.title,
+        authors: props.authors,
+        description: props.description,
+        image: props.image,
+        infoLink: props.infoLink,
+    })
+  }
+
+  const handleClickRemove = event => {
+    event.preventDefault();
+    props.removeBook(props.id)
+  }
+  
   return (
     <Card className={classes.root}>
         <CardMedia
@@ -63,7 +80,10 @@ export const Book = props => {
                     <div className="col-3">
                         <ButtonGroup disableElevation variant="contained" color="primary" infoLink={props.infoLink}>
                             <Button href={props.infoLink} target="_blank">View</Button>
-                            <Button>Add</Button>
+                            {props.heading == "Search Results" ? 
+                               <Button onClick={handleClickAdd}>ADD</Button> : 
+                               <Button onClick={handleClickRemove}>REMOVE</Button>
+                            }
                         </ButtonGroup>
                     </div>
                 </div>
@@ -75,15 +95,3 @@ export const Book = props => {
     </Card>
   );
 }
-
-// <div className={classes.details}>
-//   <IconButton aria-label="previous">
-//     {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-//   </IconButton>
-//   <IconButton aria-label="play/pause">
-//     <PlayArrowIcon className={classes.playIcon} />
-//   </IconButton>
-//   <IconButton aria-label="next">
-//     {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-//   </IconButton>
-// </div>
