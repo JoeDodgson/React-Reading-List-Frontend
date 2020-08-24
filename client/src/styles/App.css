@@ -10816,6 +10816,10 @@ a {
   text-decoration: none;
 }
 
+.MuiButtonGroup-root a:hover {
+  color: #FFF;
+}
+
 button {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
@@ -10843,6 +10847,19 @@ button:hover {
 
 .navbar-brand i {
   margin-left: 20px;
+}
+
+.nav-item {
+  padding: 5px 10px;
+}
+
+.nav-item a {
+  font-size: 120%;
+}
+
+.nav-item a:hover {
+  color: #3f51b5;
+  text-decoration: none;
 }
 
 .active a {
