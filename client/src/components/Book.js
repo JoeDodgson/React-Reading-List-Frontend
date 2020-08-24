@@ -65,6 +65,7 @@ export const Book = props => {
             className={classes.cover}
             image={props.image}
             title={props.title}
+            style={{width: "200px"}}
         />
         <div className={classes.details}>
             <CardContent className={classes.content}>
@@ -87,7 +88,7 @@ export const Book = props => {
                         </ButtonGroup>
                     </div>
                 </div>
-                <div className={classes.details}>
+                <div className={classes.details} style={{maxHeight: "225px", overflow: "hidden", textOverflow: "ellipsis", textAlign: "left"}}>
                     <p>{props.description}</p>
                 </div>
             </CardContent>
