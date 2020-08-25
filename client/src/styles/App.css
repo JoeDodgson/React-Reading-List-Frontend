@@ -10870,6 +10870,10 @@ button:hover {
   font-weight: bold;
 }
 
+.books-container i:hover {
+  color: #3f51b5;
+}
+
 .header-container, .App {
   text-align: center;
 }

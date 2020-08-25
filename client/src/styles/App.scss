@@ -77,6 +77,10 @@ button:hover {
     font-weight: bold;
 }
 
+.books-container i:hover {
+    color: $darkBlue;
+}
+
 .header-container, .App {
     text-align: center;
 }
