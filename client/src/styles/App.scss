@@ -23,6 +23,10 @@ a {
     color: $darkGrey;
     text-decoration: none;
 }
+
+.MuiButtonGroup-root a:hover {
+    color: $white;
+}
   
 button {
     transition-duration: 0.1s;
@@ -52,8 +56,29 @@ button:hover {
     margin-left: 20px;
 }
 
+.navbar-brand:hover {
+    cursor: default;
+}
+
+.nav-item {
+    padding: 5px 10px;
+}
+
+.nav-item a {
+    font-size: 120%;
+}
+
+.nav-item a:hover {
+    color: $darkBlue;
+    text-decoration: none;
+}
+
 .active a {
     font-weight: bold;
+}
+
+.books-container i:hover {
+    color: $darkBlue;
 }
 
 .header-container, .App {

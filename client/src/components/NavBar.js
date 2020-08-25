@@ -10,13 +10,13 @@ export const NavBar = props => {
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav mr-auto">
                     <li className={`nav-item ${props.active === "search" ? "active": ""}`}>
-                        <a className="nav-link" href="/search">
+                        <a href="/search">
                             Search 
                             {props.active === "search" ? <span className="sr-only">(current)</span> :<></>}
                         </a>
                     </li>
                     <li className={`nav-item ${props.active === "saved" ? "active": ""}`}>
-                        <a className="nav-link" href="/saved">
+                        <a href="/saved">
                             Saved
                             {props.active === "saved" ? <span className="sr-only">(current)</span> :<></>}
                         </a>
