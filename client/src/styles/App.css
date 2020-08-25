@@ -10849,6 +10849,10 @@ button:hover {
   margin-left: 20px;
 }
 
+.navbar-brand:hover {
+  cursor: default;
+}
+
 .nav-item {
   padding: 5px 10px;
 }
