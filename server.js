@@ -14,6 +14,10 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   // Set static build folder
   app.use(express.static("build"));
+
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
 }
 
 // Start the API server
