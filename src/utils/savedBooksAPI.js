@@ -1,8 +1,5 @@
 import axios from "axios";
 
-// Require in API key from .env
-require("dotenv").config();
-
 // Export an object containing methods used for accessing the saved books from the MongoDB database
 export default {
   // Returns all saved books
@@ -30,7 +27,7 @@ export default {
   // Deletes the book with the given id (**NOT _id**)
   deleteBook: async id => {
     try {
-      const res = await axios.delete("https://jjd-react-reading-list-backend.herokuapp.com/api/books/" + id);
+      const res = await axios.delete(`https://jjd-react-reading-list-backend.herokuapp.com/api/books/${id}`);
       return res;
     }
     catch (err) {
