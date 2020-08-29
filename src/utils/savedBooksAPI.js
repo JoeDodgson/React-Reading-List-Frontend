@@ -8,7 +8,7 @@ export default {
   // Returns all saved books
   getSavedBooks: async () => {
     try {
-      const res = await axios.get("/api/books");
+      const res = await axios.get("https://jjd-react-reading-list-backend.herokuapp.com/api/books");
       return res;
     }
     catch (err) {
@@ -19,7 +19,7 @@ export default {
   // Saves a book to the database
   saveBook: async bookData => {
     try {
-      const res = await axios.post("/api/books", bookData);
+      const res = await axios.post("https://jjd-react-reading-list-backend.herokuapp.com/api/books", bookData);
       return res;
     }
     catch (err) {
@@ -30,7 +30,7 @@ export default {
   // Deletes the book with the given id (**NOT _id**)
   deleteBook: async id => {
     try {
-      const res = await axios.delete("/api/books/" + id);
+      const res = await axios.delete("https://jjd-react-reading-list-backend.herokuapp.com/api/books/" + id);
       return res;
     }
     catch (err) {
